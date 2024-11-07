@@ -1,0 +1,55 @@
+.about {
+    background: var(--white);
+    padding: 60px 0;
+    position: relative;
+}
+
+.profile-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    position: relative;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.8s ease forwards;
+}
+
+.tech-stack {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--light-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.tech-stack:hover {
+    transform: translateY(-10px);
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tech-icons i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.tech-icons i:hover {
+    color: var(--secondary-color);
+    transform: scale(1.2) rotate(360deg);
+} 

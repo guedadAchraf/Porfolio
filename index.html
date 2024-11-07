@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio - Java/Angular Developer</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">ACHRAF GUEDAD</div>
+            <button class="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#education">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Add this right after the navbar -->
+    <div class="ai-chat-widget" id="aiChatWidget">
+        <div class="chat-header">
+            <div class="ai-avatar">AI</div>
+            <h3>Portfolio Assistant</h3>
+            <button class="minimize-btn" id="minimizeChatBtn">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai-message">
+                <div class="ai-avatar">AI</div>
+                <div class="message-content">
+                    Hello! I'm your AI assistant. What would you like to know about my creator?
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Ask me anything...">
+            <button id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="chat-toggle-btn" id="toggleChatBtn">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Développeur Full Stack Java/Angular</h1>
+            <p>Spécialisé en Microservices, Docker & Kubernetes</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary">Me Contacter</a>
+                <a href="#projects" class="cta-secondary">Voir Mes Projets</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À Propos</h2>
+            <p class="profile-text">
+                Enthousiaste et dévoué, je suis passionné par le développement logiciel, 
+                avec une expertise particulière dans les technologies Java, Angular, Docker et 
+                Kubernetes. Mon parcours reflète mon engagement envers l'innovation et 
+                l'excellence technique. Je cherche continuellement à perfectionner mes 
+                compétences pour créer des solutions logicielles robustes et évolutives.
+            </p>
+            <div class="tech-stack">
+                <h3>Technologies Principales</h3>
+                <div class="tech-icons">
+                    <i class="fab fa-java"></i>
+                    <i class="fab fa-angular"></i>
+                    <i class="fab fa-docker"></i>
+                    <i class="fab fa-aws"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this after the about section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">05/2023 - Actuel</div>
+                    <div class="timeline-content">
+                        <h3>Développeur Java Angular Kubernetes</h3>
+                        <h4>Freelance - Ouarzazate</h4>
+                        <p>Conception et réalisation des applications E-commerce avec hébergement.</p>
+                        <div class="project-links">
+                            <a href="https://commonshare-task-vercel.app/" target="_blank">CommonShare</a>
+                            <a href="https://www.proc-stage.ma/" target="_blank">Proc-Stage</a>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Java 8</span>
+                            <span>Spring Boot</span>
+                            <span>Angular</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">11/2022 - 04/2023</div>
+                    <div class="timeline-content">
+                        <h3>Développeur Java Angular</h3>
+                        <h4>Upwork - Marrakech</h4>
+                        <p>Gestion d'une galerie marchande</p>
+                        <ul class="responsibility-list">
+                            <li>Maintenance et Support Technique</li>
+                            <li>Gestion des Livraisons</li>
+                            <li>Gestion des Stocks</li>
+                            <li>Gestion des Produits</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java 8</span>
+                            <span>Spring Boot</span>
+                            <span>Angular 14</span>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">05/2021 - 10/2022</div>
+                    <div class="timeline-content">
+                        <h3>Développeur Java Angular</h3>
+                        <h4>Capgemini - Casablanca</h4>
+                        <p>Projet du total energy</p>
+                        <ul class="responsibility-list">
+                            <li>Création des API</li>
+                            <li>Gestion du stock du carburant</li>
+                            <li>Gestion des envoyés</li>
+                            <li>Gestion de paiement</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java 8</span>
+                            <span>Spring Boot</span>
+                            <span>Spring Cloud</span>
+                            <span>Angular</span>
+                            <span>GitLab</span>
+                            <span>Confluence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projets Réalisés</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>CommonShare</h3>
+                        <div class="project-links">
+                            <a href="https://commonshare-task-vercel.app/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Application E-commerce avec hébergement</p>
+                    <div class="tech-tags">
+                        <span>Angular</span>
+                        <span>Spring Boot</span>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Proc-Stage</h3>
+                        <div class="project-links">
+                            <a href="https://www.proc-stage.ma/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>Plateforme de gestion de stages et projets</p>
+                    <div class="tech-tags">
+                        <span>Java</span>
+                        <span>Angular</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this after the projects section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Architectures</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Microservices</span>
+                            <div class="skill-level expert"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>REST API</span>
+                            <div class="skill-level expert"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Cloud Native</span>
+                            <div class="skill-level advanced"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Langages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Java 8/Spring Boot</span>
+                            <div class="skill-level expert"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Angular</span>
+                            <div class="skill-level expert"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript/JavaScript</span>
+                            <div class="skill-level advanced"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Docker/Kubernetes</span>
+                            <div class="skill-level expert"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>AWS</span>
+                            <div class="skill-level advanced"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CI/CD</span>
+                            <div class="skill-level advanced"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Formation</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-date">09/2023</div>
+                    <div class="education-content">
+                        <h3>Frontend Development using Angular</h3>
+                        <h4>Front end Development - Board infinity</h4>
+                        <p class="education-grade">Mention: très bien</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-date">09/2015 - 09/2018</div>
+                    <div class="education-content">
+                        <h3>Master MIAGE</h3>
+                        <h4>École Marocaine Des Sciences de L'ingénieur - Marrakech</h4>
+                        <p class="education-grade">Mention: assez bien</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-date">09/2012 - 07/2015</div>
+                    <div class="education-content">
+                        <h3>Diplôme des études universitaire (DEUP)</h3>
+                        <h4>Faculté polydisciplinaire d'Ouarzazate</h4>
+                        <p>Génie logiciels</p>
+                        <p class="education-grade">Mention: assez bien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this before closing body tag -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Me Contacter</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Localisation</h3>
+                        <p>Hay elwahda Numéro 1660, 45000, Ouarzazate</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>+212617611753</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>GUEDAD.ACHRAF@gmail.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" 
+                                   name="entry.40364876" 
+                                   placeholder="Votre nom" 
+                                   required 
+                                   minlength="2"
+                                   maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" 
+                                   name="entry.1274072223" 
+                                   placeholder="Votre email" 
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" 
+                                   name="entry.1274072224" 
+                                   placeholder="Sujet" 
+                                   required 
+                                   minlength="2"
+                                   maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="entry.1274072225" 
+                                      placeholder="Votre message" 
+                                      rows="5" 
+                                      required 
+                                      minlength="10"
+                                      maxlength="1000"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Envoyer</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Portfolio. Tous droits réservés.</p>
+                <a href="#" class="scroll-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before closing body tag -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Message envoyé avec succès!');
+            this.reset();
+        });
+
+        // Scroll to top button visibility
+        const scrollTop = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                scrollTop.classList.add('active');
+            } else {
+                scrollTop.classList.remove('active');
+            }
+        });
+    </script>
+
+    <!-- Update the script section at the bottom of the file -->
+    <script src="QA.js"></script>
+    <script src="chat.js"></script>
+    <script src="script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 

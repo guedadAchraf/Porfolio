@@ -1,0 +1,53 @@
+/* Education section styles */
+.education {
+    background: var(--white);
+    padding: var(--desktop-padding) var(--mobile-padding);
+}
+
+.education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 4rem auto 0;
+}
+
+.education-item {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    position: relative;
+    box-shadow: var(--shadow-md);
+}
+
+.education-date {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    left: 2rem;
+    font-size: 0.9rem;
+}
+
+.education-content {
+    margin-top: 1rem;
+}
+
+.education-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-content h4 {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-grade {
+    color: var(--accent-color);
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+/* ... all education related styles ... */ 

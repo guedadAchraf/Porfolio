@@ -1,0 +1,70 @@
+/* Skills section styles */
+.skills {
+    padding: 3rem 1.5rem;
+    background-color: var(--white);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.skill-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-level {
+    height: 8px;
+    width: 150px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-level::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.skill-level.expert::after {
+    width: 90%;
+}
+
+.skill-level.advanced::after {
+    width: 75%;
+}
+
+.skill-level.intermediate::after {
+    width: 60%;
+}
+/* ... all skills related styles ... */ 

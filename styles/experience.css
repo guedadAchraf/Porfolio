@@ -1,0 +1,122 @@
+/* Experience section styles */
+.experience {
+    padding: 3rem 1.5rem;
+    background-color: var(--white);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: var(--gradient-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+    width: calc(50% - 30px);
+}
+
+.timeline-item:nth-child(even) {
+    left: calc(50% + 30px);
+}
+
+.timeline-date {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    width: auto;
+    white-space: nowrap;
+    z-index: 2;
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    right: -150px;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: -150px;
+}
+
+.timeline-content {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    top: 20px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -37px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -37px;
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.timeline-content h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.timeline-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tags span {
+    background: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+/* ... all experience related styles ... */ 
